@@ -1,0 +1,64 @@
+{
+  "ConsentManagementStoredData":"Gérer vos données personnelles collectées",
+  "ConsentManagementVendorsButtonTitle": "Voir la liste des partenaires",
+  "ConsentManagementFeaturesButtonTitle": "Voir la liste des fonctionnalités",
+  "ConsentManagementSPPurposesButtonTitle": "Voir la liste des usages spéciaux",
+
+  "VendorListHeaderTitle": "Entreprise",
+  "ConsentManagementAcceptAllButtonTitle": "TOUT ACCEPTER",
+  "ConsentManagementRejectAllButtonTitle": "TOUT REFUSER",
+  "ConsentToolPartnersFakeIAB": "Partenaires ne faisant pas partie de l'IAB:",
+  "ConsentToolPartnersIAB": "Partenaires faisant partie de l'IAB:",
+
+
+  "VendorDetailPurposes": "Usages",
+  "VendorDetailFeatures": "Fonctionnalités",
+  "VendorDetailSPPurposes": "Usages spéciaux",
+  "VendorDetailSPFeatures": "Fonctionnalités spéciales",
+
+  "VendorPurposeAccepted": "Accepté",
+  "VendorPurposeDenied": "Refusé",
+  "VendorEmptyFields": "None",
+
+  "VendorListSorted": true,
+  "VendorDetailPolicy": "Voir la politique de confidentialité",
+
+  "VendorListGoogleAdsShow": "Voir la Liste des fournisseurs de technologies publicitaires",
+  "VendorListGoogleAdsLabel": "Fournisseurs de technologies publicitaires",
+
+  "DataManagementTitle":"Vos préférences sur les données",
+  "DataManagementSubtitle":"Gérer vos données personnelles collectées par les partenaires tiers.",
+  "DataManagementDataAccess":"Accèder aux données",
+  "DataManagementDataAccessDescription":"Vous pouvez obtenir vos données (personnelles ou non) collectées par notre système.",
+  "DataManagementRectifyData":"Rectifier les données",
+  "DataManagementRectifyDataDescriptionOne":"Vous pourrez rectifier vos données incomplètes ou erronées après reception par email. ",
+  "DataManagementRectifyDataDescriptionTwo":"Veuillez saisir dans le champ ci-dessus une adresse email pour recevoir vos données. Vous recevrez un email dans les prochains jours. L'adresse email sera supprimée de notre système par la suite.",
+  "DataManagementRectifyDataEmailHint":"Adresse email",
+  "DataManagementRequestInformation":"Valider",
+  "DataManagementOptOut":"Retrait / Suppression",
+  "DataManagementOptInDescription":"Si vous souhaitez supprimer vos données, toutes les données que nous avons collecté en rapport avec votre identifiant publicitaire seront supprimées.",
+  "DataManagementRequestDeletion":"Confirmer la suppression",
+  "DataManagementNoSelectionError":"Veuillez choisir l'une des deux options.",
+  "DataManagementOptoutMessage":"Votre statut sera réglé sur'Opt-out'. Il sera mis fin à la collecte et au traitement des données. Vous ne recevrez donc plus de publicité personnalisée ou d'expérience utilisateur basée sur la collecte et le traitement des données.",
+  "DataManagementRequestInformationMessage":"Merci pour votre demande ! Vous recevrez un courriel dans les prochaines semaines (maximum 30 jours). Après l'envoi des données, votre adresse e-mail sera supprimée de notre système dans les plus brefs délais.",
+  "DataManagementSubmissionError":"Une erreur s'est produite, veuillez vérifier votre connexion Internet ou réessayer plus tard.",
+
+  "WarningTitle":"Attention",
+  "InfoOkButtonTitle": "Ok",
+  "LegitimateUses": "Usages \n Légitimes",
+
+  "consentToolColorPalette": {
+    "containersBackground": "ffffff",
+    "linkSwitchBackground": "ff8107",
+    "textColor": "000000",
+    "buttonsBackgroundColor": "ff8107",
+    "buttonsTextColor": "ffffff"
+  },
+  "CloseSrcImage": "ic_black_btn.png",
+  "CloseResizeWidth": "120",
+  "CloseResizeHeight": "120",
+  "ClosePaddingTop": "30",
+  "ClosePaddingBottom": "15",
+  "ClosePaddingEnd": "25",
+  "ClosePaddingStart": "0"
+}

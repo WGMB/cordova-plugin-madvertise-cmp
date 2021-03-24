@@ -1,0 +1,40 @@
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+    }
+}
+
+
+
+repositories {
+        jcenter()
+        google()
+        flatDir{
+            dirs '../app/src/main/libs'
+        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven {
+            credentials {
+                username "madvertise-maven"
+                password "GpdGZ9GE9SK7ByWdM987"
+            }
+	url "https://api.bitbucket.org/2.0/repositories/mngcorp/deploy-maven-bluestack/src/master"
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
+    }
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.madvertise:cmp-sdk:51.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+}

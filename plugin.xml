@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.madvertise.madvertisecmpplugin"
+    version="2.3.1">
+
+    <name>MAdvertise CMP Plugin</name>
+    <description>Cordova plugin for the MAdvertise CMP Framework</description>
+    <author>Anoir Belkahla And Hsan Trimech</author>
+    <license>BSD</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/madvertisecmp.js" name="MAdvertiseCmp">
+        <clobbers target="MAdvertiseCmp" />
+    </js-module>
+
+    <access origin="*" />
+
+    <!-- iOS -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="MAdvertiseCMP">
+                <param name="ios-package" value="CDVMAdvertiseCMP"/>
+            </feature>
+        </config-file>
+
+        <podspec>
+            <pods use-frameworks="true">
+                <pod name="MAdvertiseCMP" spec=">=44" />
+
+            </pods>
+           </podspec>
+
+
+        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+            </dict>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="MinimumOSVersion">
+            <string>10.0</string>
+        </config-file>
+
+        <!-- Plugin -->
+        <header-file src="src/ios/CDVMAdvertiseCMP.h"/>
+        <source-file src="src/ios/CDVMAdvertiseCMP.m" />
+
+        <resource-file src="src/ios/resources/madvertise_config_de.plist"/>
+        <resource-file src="src/ios/resources/madvertise_config_en.plist"/>
+        <resource-file src="src/ios/resources/madvertise_config_fr.plist" />
+        <resource-file src="src/ios/resources/madvertise_config_it.plist" />
+
+
+
+    </platform>
+
+    <!-- Android -->
+    <platform name="android">
+
+
+        <config-file target="res/xml/config.xml" parent="/*" >
+          <feature name="MAdvertiseCmp">
+            <param name="android-package" value="com.mngads.cordova.CDVMAdvertiseCmp" />
+            <param name="onload" value="true" />
+          </feature>
+        </config-file>
+
+        <framework src="src/android/gradle/build.gradle" custom="true" type="gradleReference" />
+        <framework src="build-extras.gradle" custom="true" type="gradleReference" />
+
+        <resource-file src="src/android/resources/madvertise_config_de.json" target="/res/raw/madvertise_config_de.json" />
+
+        <resource-file src="src/android/resources/madvertise_config_en.json" target="/res/raw/madvertise_config_en.json" />
+
+        <resource-file src="src/android/resources/madvertise_config_fr.json" target="/res/raw/madvertise_config_fr.json" />
+
+        <resource-file src="src/android/resources/madvertise_config_it.json" target="/res/raw/madvertise_config_it.json" />
+
+        <source-file src="src/android/CDV/CDVMAdvertiseCmp.java" target-dir="src/com/mngads/cordova" />
+
+    </platform>
+
+</plugin>

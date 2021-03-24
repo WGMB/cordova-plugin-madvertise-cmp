@@ -1,0 +1,66 @@
+{
+
+  "ConsentManagementVendorsButtonTitle": "See the list of vendors",
+  "ConsentManagementFeaturesButtonTitle": "See the list of features",
+  "ConsentManagementSPPurposesButtonTitle": "See the list of special uses",
+  "ConsentManagementStoredData":"Manage your stored personal data",
+
+  "VendorDetailPurposes": "Purposes",
+  "VendorDetailFeatures": "Features",
+  "VendorDetailSPPurposes": "Special Uses",
+  "VendorDetailSPFeatures": "Special Features",
+
+  "ConsentManagementAcceptAllButtonTitle": "ACCEPT ALL",
+  "ConsentManagementRejectAllButtonTitle": "REJECT ALL",
+
+  "VendorListHeaderTitle": "COMPANY",
+  "VendorPurposeAccepted": "Accepted",
+  "VendorPurposeDenied": "Denied",
+  "VendorEmptyFields": "None",
+
+  "VendorListSorted": true,
+  "VendorDetailPolicy": "See the privacy policy",
+
+  "ConsentToolPartnersFakeIAB": "Non IAB Partners:",
+  "ConsentToolPartnersIAB": "IAB Partners:",
+
+  "VendorListGoogleAdsShow": "See List of Advertising Technology Suppliers",
+  "VendorListGoogleAdsLabel": "Advertising technology providers",
+
+
+  "DataManagementTitle":"Subject Access Request",
+  "DataManagementSubtitle":"Manage your stored personal data at external partners.",
+  "DataManagementDataAccess":"Access data",
+  "DataManagementDataAccessDescription":"You can obtain your data (whether or not personal) stored by our direct data controllers and processors",
+  "DataManagementRectifyData":"Rectify data",
+  "DataManagementRectifyDataDescriptionOne":"Once you have received your data, you have the right to rectification incomplete or wrong data sets.",
+  "DataManagementRectifyDataDescriptionTwo":"Please enter an email address to wich the data should be sent, at the field above. You will receive an email within the next few days. The e-mail address will be deleted at our system after this process will have been accomplished.",
+  "DataManagementRectifyDataEmailHint":"Your email address",
+  "DataManagementRequestInformation":"Request Information",
+  "DataManagementOptOut":"Optout / Delete",
+  "DataManagementOptInDescription":"If you wish to exercise the 'data deletion' option, all data that we have stored related to your device ID will be deleted.",
+  "DataManagementRequestDeletion":"Request Deletion",
+  "DataManagementRequestInformationMessage":"Thank you for your request! You will receive an email within the next few weeks (maximum 30days). The e-mail address will be deleted from our system as soon as possible after the data has been sent.",
+  "DataManagementOptoutMessage":"Your status will be set to 'Opt-out'. Data collection and processing will be terminated. You will therefore no longer receive any personalized advertising or user experience based on this data collection and processing.",
+  "DataManagementSubmissionError":"An error has occurred, please check your internet connection or try again later.",
+  "DataManagementNoSelectionError":"Please choose one of the two options.",
+
+  "WarningTitle":"Warning",
+  "InfoOkButtonTitle": "Ok",
+  "LegitimateUses": "Legitimate \n Uses",
+
+  "consentToolColorPalette": {
+    "containersBackground": "ffffff",
+    "linkSwitchBackground": "ff8107",
+    "textColor": "000000",
+    "buttonsBackgroundColor": "ff8107",
+    "buttonsTextColor": "ffffff"
+  },
+  "CloseSrcImage": "ic_black_btn.png",
+  "CloseResizeWidth": "120",
+  "CloseResizeHeight": "120",
+  "ClosePaddingTop": "30",
+  "ClosePaddingBottom": "15",
+  "ClosePaddingEnd": "25",
+  "ClosePaddingStart": "0"
+}

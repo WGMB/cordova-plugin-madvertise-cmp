@@ -1,0 +1,67 @@
+{
+  "ConsentManagementVendorsButtonTitle": "Siehe die Liste der Anbieter",
+  "ConsentManagementFeaturesButtonTitle": "Siehe die Liste der Funktionen",
+  "ConsentManagementSPPurposesButtonTitle": "Siehe die Liste der besonderen Verwendungszwecke",
+  "ConsentManagementStoredData":"Verwalten Sie Ihre gespeicherten persönlichen Daten",
+
+  "VendorListHeaderTitle": "UNTERNEHMEN",
+  "VendorPurposeAccepted": "Akzeptieren",
+  "VendorPurposeDenied": "Ablehnen",
+  "VendorEmptyFields": "Keine",
+
+
+  "ConsentManagementAcceptAllButtonTitle": "Allem  Zustimmen",
+  "ConsentManagementRejectAllButtonTitle": "Alle ablehnen",
+
+  "VendorDetailPurposes": "Verarbeitungszweck",
+  "VendorDetailFeatures": "Funktionen",
+  "VendorDetailSPPurposes": "Besondere Verwendungszwecke",
+  "VendorDetailSPFeatures": "Besondere Merkmale",
+
+
+  "VendorListSorted": true,
+  "VendorDetailPolicy": "Siehe die Datenschutzrichtlinie",
+
+  "ConsentToolPartnersFakeIAB": "Nicht IAB Partner:",
+  "ConsentToolPartnersIAB": "IAB Partner:",
+
+  "VendorListGoogleAdsShow": "Siehe Liste der Werbetechnologielieferanten",
+  "VendorListGoogleAdsLabel": "Anbieter von Werbetechnologien",
+
+  "DataManagementTitle":"Datenauskunft",
+  "DataManagementSubtitle":"Verwaltung der extern gespeicherten Daten",
+  "DataManagementDataAccess":"Datenauskunft",
+  "DataManagementDataAccessDescription":"Sie können hier ihre personen- und nichtpersonenbezogenen Daten, die gespeichert und verarbeitet werden, abfragen.",
+  "DataManagementRectifyData":"Daten korrigieren",
+  "DataManagementRectifyDataDescriptionOne":"Insofern Sie einmal ihre Daten eingesehen haben, können Sie hier unvollständige oder falsche Daten berichtigen lassen.",
+  "DataManagementRectifyDataDescriptionTwo":"Bitte geben Sie im obigen Feld eine E-Mail-Adresse ein, an welche die Daten gesendet werden sollen. Sie erhalten in den nächsten Tagen eine Auskunft. Die E-Mail-Adresse wird nach diesem Vorgang in unserem System gelöscht.",
+  "DataManagementRectifyDataEmailHint":"Ihre E-Mail Adresse",
+  "DataManagementRequestInformation":"Daten Anfragen",
+  "DataManagementOptOut":"Optout / Löschung",
+  "DataManagementOptInDescription":"Wenn Sie den 'Optout' ausüben möchten, werden alle Daten, die wir zu Ihrer Geräte-ID gespeichert haben, gelöscht.",
+  "DataManagementRequestDeletion":"Löschung Ihrer Daten",
+  "DataManagementRequestInformationMessage":"Danke für Ihre Anfrage! Sie werden innerhalb der nächsten 30 Tage eine Auskunft erhalten. Danach wird ihre E-mail Adresse aus unserem System gelöscht werden.",
+  "DataManagementOptoutMessage":"Ihr Status wird neu als \"Opt Out\" gesetzt und die Datenspeicherung und Weitergabe wird beendet werden. Anschließend werden Sie keine personalisierte Werbung mehr erhalten.",
+  "DataManagementSubmissionError":"Ein Fehler ist aufgetreten, bitte überprüfen Sie Ihre Internetverbindung oder versuchen Sie es später noch einmal.",
+  "DataManagementNoSelectionError":"Wählen Sie eine der beiden Möglichkeiten.",
+
+  "WarningTitle":"Warnung",
+  "InfoOkButtonTitle": "Ok",
+  "LegitimateUses": "Legitime \n Verwendungen",
+
+  "consentToolColorPalette": {
+    "containersBackground": "ffffff",
+    "linkSwitchBackground": "ff8107",
+    "textColor": "000000",
+    "buttonsBackgroundColor": "ff8107",
+    "buttonsTextColor": "ffffff"
+  },
+
+  "CloseSrcImage": "ic_black_btn.png",
+  "CloseResizeWidth": "120",
+  "CloseResizeHeight": "120",
+  "ClosePaddingTop": "30",
+  "ClosePaddingBottom": "15",
+  "ClosePaddingEnd": "25",
+  "ClosePaddingStart": "0"
+}

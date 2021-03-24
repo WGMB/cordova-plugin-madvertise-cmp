@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Cordova plugin for the MAdvertise CMP Framework",
   "cordova": {
-    "id": "com.madvertise.madvertisecmpplugin",
+    "id": "cordova-plugin-madvertise-cmp",
     "platforms": [
     "ios",
       "android"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/mngcorp/madvertise-gdpr-cmp-cordova-plugin.git"
+    "url": "git+https://github.com/WGMB/cordova-plugin-madvertise-cmp.git"
   },
   "keywords": [
     "ecosystem:cordova",

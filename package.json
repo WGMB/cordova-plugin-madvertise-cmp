@@ -1,5 +1,5 @@
 {
-  "name": "madvertisecmp",
+  "name": "cordova-plugin-madvertise-cmp",
   "version": "3.0.0",
   "description": "Cordova plugin for the MAdvertise CMP Framework",
   "cordova": {

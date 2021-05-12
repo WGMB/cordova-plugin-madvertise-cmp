@@ -51,9 +51,9 @@
 
   "consentToolColorPalette": {
     "containersBackground": "ffffff",
-    "linkSwitchBackground": "ff8107",
+    "linkSwitchBackground": "F0871F",
     "textColor": "000000",
-    "buttonsBackgroundColor": "ff8107",
+    "buttonsBackgroundColor": "F0871F",
     "buttonsTextColor": "ffffff"
   },
   "CloseSrcImage": "ic_black_btn.png",

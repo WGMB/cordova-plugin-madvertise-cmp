@@ -43,18 +43,40 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
             case "madvertisecmp_configure_full_screen":
                 configureCmpFullScreen(options);
                 return true;
-            case "madvertisecmp_content_provided_callback":
-                ConsentManager.sharedInstance.setOnConsentProvidedListener(getContentProvidedListener(callbackContext));
+           case "madvertisecmp_content_provided_callback":
+        mContentProvidedCallback = callbackContext;
                 return true;
             case "madvertisecmp_show_consent_tool_popup":
                 configureCmpPopup(options);
                 ConsentManager.sharedInstance.setConsentToolClosed(false);
-                ConsentManager.sharedInstance.showLocationConsentTool();
+                ConsentManager.sharedInstance.openCMP(cordova.getActivity(), new OnConsentProvidedListener() {
+            @Override
+            public void consentProvided(String actionType) {
+                mContentProvidedCallback.success();
+
+            }
+
+            @Override
+            public void consentFailed( String error) { 
+
+            }
+        });
                 return true;
             case "madvertisecmp_show_consent_tool_full_screen":
                 configureCmpFullScreen(options);
                 ConsentManager.sharedInstance.setConsentToolClosed(false);
-                ConsentManager.sharedInstance.showLocationConsentTool();
+                ConsentManager.sharedInstance.openCMP(cordova.getActivity(), new OnConsentProvidedListener() {
+            @Override
+            public void consentProvided(String actionType) {
+                mContentProvidedCallback.success();
+
+            }
+
+            @Override
+            public void consentFailed( String error) { 
+
+            }
+        });
                 return true;
             case "madvertisecmp_get_consent_string":
                 provideConsentString(callbackContext);
@@ -91,16 +113,15 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
     }
 
 
-
+/*
     private OnConsentProvidedListener getContentProvidedListener(CallbackContext callbackContext) {
         mContentProvidedCallback = callbackContext;
         return new OnConsentProvidedListener() {
             @Override
             public void consentProvided(String actionType) {
-                mContentProvidedCallback.success();
             }
         };
-    }
+    }*/
 
     private void configureCmpPopup(JSONArray options) {
 
@@ -113,6 +134,19 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
                 .getResources()
                 .getIdentifier(resourceName, "raw", cordova.getActivity().getPackageName());
     ConsentManager.sharedInstance.configure(cordova.getActivity().getApplication(), appId,language, new ConsentToolConfiguration(resID),publisherCC);
+   
+  ConsentManager.sharedInstance.showCMP(cordova.getActivity(), new OnConsentProvidedListener() {
+            @Override
+            public void consentProvided(String actionType) {
+                mContentProvidedCallback.success();
+
+            }
+
+            @Override
+            public void consentFailed( String error) { 
+
+            }
+        });
     }
 
 
@@ -130,7 +164,18 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
 
      ConsentManager.sharedInstance.configure(cordova.getActivity().getApplication(), appId,language, new ConsentToolConfiguration(resID).setConsentToolSize(ConsentToolConfiguration.MATCH_PARENT, 
         ConsentToolConfiguration.MATCH_PARENT), publisherCC);
+        ConsentManager.sharedInstance.showCMP(cordova.getActivity(), new OnConsentProvidedListener() {
+            @Override
+            public void consentProvided(String actionType) {
+                mContentProvidedCallback.success();
 
+            }
+
+            @Override
+            public void consentFailed( String error) { 
+
+            }
+        });
 
     }
 

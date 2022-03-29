@@ -36,6 +36,9 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray options,
                            CallbackContext callbackContext) {
+        
+        mContentProvidedCallback = callbackContext;
+        
         switch (action) {
             case "madvertisecmp_configure":
                 configureCmpPopup(options);
@@ -52,7 +55,7 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
                 ConsentManager.sharedInstance.openCMP(cordova.getActivity(), new OnConsentProvidedListener() {
             @Override
             public void consentProvided(String actionType) {
-                mContentProvidedCallback.success();
+                handleContentCallbackSuccess();
 
             }
 
@@ -68,7 +71,7 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
                 ConsentManager.sharedInstance.openCMP(cordova.getActivity(), new OnConsentProvidedListener() {
             @Override
             public void consentProvided(String actionType) {
-                mContentProvidedCallback.success();
+                handleContentCallbackSuccess();
 
             }
 
@@ -89,6 +92,12 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
                 return true;
             default:
                 return false;
+        }
+    }
+    
+    private void handleContentCallbackSuccess() {
+        if (mContentProvidedCallback != null) {
+            mContentProvidedCallback.success();
         }
     }
 
@@ -138,7 +147,7 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
   ConsentManager.sharedInstance.showCMP(cordova.getActivity(), new OnConsentProvidedListener() {
             @Override
             public void consentProvided(String actionType) {
-                mContentProvidedCallback.success();
+                handleContentCallbackSuccess();
 
             }
 
@@ -167,7 +176,7 @@ public class CDVMAdvertiseCmp extends CordovaPlugin {
         ConsentManager.sharedInstance.showCMP(cordova.getActivity(), new OnConsentProvidedListener() {
             @Override
             public void consentProvided(String actionType) {
-                mContentProvidedCallback.success();
+                handleContentCallbackSuccess();
 
             }
 
